@@ -30,6 +30,7 @@ def complete_process(i):
     for j in range(num_process):
         if process[j][0] == i:
             i = j
+            break
 
     if time < process[i][1]:
         system_idle += abs(time - process[i][1])
